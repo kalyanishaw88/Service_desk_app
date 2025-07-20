@@ -1,85 +1,70 @@
-🛠️ Service Desk Application
-A full-stack web application built for users to raise service tickets and for admins to manage them efficiently.
+# Getting Started with Create React App
 
-🌐 Tech Stack
-Frontend: HTML, CSS, JavaScript (React)
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Backend: Node.js, Express.js
+## Available Scripts
 
-Database: MongoDB
+In the project directory, you can run:
 
-Authentication: JWT
+### `npm start`
 
-Deployment:  Vercel for frontend, Render/Heroku for backend
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-📁 Project Structure
-pgsql
-Copy
-Edit
-├── backend
-│   ├── config
-│   ├── controllers
-│   ├── middleware
-│   ├── models
-│   ├── routes
-│   │   ├── authRoutes.js
-│   │   └── ticketRoutes.js
-│   └── server.js
-├── frontend
-│   └── src
-│       └── index.html (React App)
-├── .env
-├── package.json
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-🔐 API Routes Summary
-User Auth Routes (/api/auth)
-POST /register – Register a new user
+### `npm test`
 
-POST /login – Login existing user
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-Ticket Routes (/api/tickets)
-POST / – Create a ticket (User)
+### `npm run build`
 
-GET /my – View user-specific tickets
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-GET / – View all tickets (Admin)
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-PUT /:id – Update ticket status/details
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-Middleware:
+### `npm run eject`
 
-protect: JWT authentication middleware to protect routes.
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-🚀 Getting Started
-bash
-Copy
-Edit
-# Clone the repo
-git clone https://github.com/yourusername/servicedesk.git
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-# Navigate to the project directory
-cd servicedesk
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-# Install dependencies
-npm install
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-# Run backend
-npm run server
+## Learn More
 
-# Run frontend (if React setup)
-cd frontend
-npm start
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-📌 Features
-📝 Create and track service tickets
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-🔐 JWT-based user authentication
+### Code Splitting
 
-🛡️ Role-based access (user/admin)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-📊 Admin panel for managing tickets
+### Analyzing the Bundle Size
 
-⚡ Real-time UI with status updates
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-📫 Contact
-For any issues or suggestions, feel free to open an issue or connect via LinkedIn.
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
